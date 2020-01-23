@@ -144,6 +144,14 @@ body {
 .flex {
   display: flex;
 }
+.title-font {
+  font-size: 2rem;
+  font-family: 'Bangers', cursive;
+}
+.main-font {
+  font-size: 1.4rem;
+  font-family: 'Playfair Display', serif;
+}
 header {
   height: 10vh;
   background-color: #D1BFFD;
@@ -154,11 +162,26 @@ header .container {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 header .container .navbar {
   width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header .container .navbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 header .container .navbar ul {
   width: 100%;
@@ -167,10 +190,17 @@ header .container .navbar ul {
 }
 header .container .navbar ul li a {
   text-decoration: none;
+  font-size: 2rem;
   font-family: 'Bangers', cursive;
   color: black;
-  font-size: 1.8rem;
   letter-spacing: 2px;
+}
+@media (max-width: 500px) {
+  header .container .navbar ul li a {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+  }
 }
 header .container .navbar ul li a:hover {
   color: lightgray;
@@ -182,9 +212,14 @@ header .container .resume {
   align-items: center;
 }
 header .container .resume h1 {
+  font-size: 2rem;
   font-family: 'Bangers', cursive;
   letter-spacing: 4px;
-  font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  header .container .resume h1 {
+    font-size: 1rem;
+  }
 }
 .intro {
   height: 35vh;
@@ -192,8 +227,23 @@ header .container .resume h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .intro {
+    height: 35vh;
+    margin-top: 11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .intro .introImg {
   width: 30%;
+}
+@media (max-width: 500px) {
+  .intro .introImg {
+    display: none;
+  }
 }
 .intro .introDescr {
   width: 60%;
@@ -209,15 +259,25 @@ header .container .resume h1 {
 .intro .introDescr .introContainer h2 {
   width: 40%;
   text-align: center;
+  font-size: 2rem;
   font-family: 'Bangers', cursive;
-  font-size: 2.4rem;
   letter-spacing: 4%;
+}
+@media (max-width: 500px) {
+  .intro .introDescr .introContainer h2 {
+    font-size: 1rem;
+  }
 }
 .intro .introDescr .introContainer p {
   width: 60%;
+  font-size: 1.4rem;
   font-family: 'Playfair Display', serif;
-  font-size: 1rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .intro .introDescr .introContainer p {
+    font-size: 0.7rem;
+  }
 }
 .skills {
   height: 35vh;
@@ -225,8 +285,23 @@ header .container .resume h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .skills {
+    height: 35vh;
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .skills .skillsImg {
   width: 30%;
+}
+@media (max-width: 500px) {
+  .skills .skillsImg {
+    display: none;
+  }
 }
 .skills .skillsDescr {
   width: 60%;
@@ -235,15 +310,30 @@ header .container .resume h1 {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .skills .skillsDescr {
+    padding: 20px;
+  }
+}
 .skills .skillsDescr h2 {
   width: 30%;
+  font-size: 2rem;
   font-family: 'Bangers', cursive;
-  font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  .skills .skillsDescr h2 {
+    font-size: 1rem;
+  }
 }
 .skills .skillsDescr ul {
   width: 50%;
-  font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
+  font-family: 'Playfair Display', serif;
+}
+@media (max-width: 500px) {
+  .skills .skillsDescr ul {
+    font-size: 0.7rem;
+  }
 }
 .workhistory {
   height: 35vh;
@@ -251,8 +341,22 @@ header .container .resume h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .workhistory {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .workhistory .workImg {
   width: 30%;
+}
+@media (max-width: 500px) {
+  .workhistory .workImg {
+    display: none;
+  }
 }
 .workhistory .worklist {
   width: 60%;
@@ -261,15 +365,30 @@ header .container .resume h1 {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .workhistory .worklist {
+    padding: 20px;
+  }
+}
 .workhistory .worklist h2 {
   width: 30%;
+  font-size: 2rem;
   font-family: 'Bangers', cursive;
-  font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  .workhistory .worklist h2 {
+    font-size: 1rem;
+  }
 }
 .workhistory .worklist ul {
   width: 50%;
-  font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
+  font-family: 'Playfair Display', serif;
+}
+@media (max-width: 500px) {
+  .workhistory .worklist ul {
+    font-size: 0.7rem;
+  }
 }
 .contact {
   height: 40vh;
