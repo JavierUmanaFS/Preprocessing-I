@@ -57,12 +57,12 @@ table {
 
 html, body {
 	height: 100%;
-	background-color: #e6e6fa;
 }
 
 body{
 	width:90%;
 	margin: 0 auto;
+	background-color: #e6e6fa;
 }
 
 // Variables
@@ -128,7 +128,7 @@ background-color: #D1BFFD;
 }//End of Header
 
 .intro {
-	height: 40vh;
+	height: 39vh;
 	margin-top: 6vh;
 	display: flex;
 	justify-content: space-between;
@@ -141,12 +141,36 @@ background-color: #D1BFFD;
 	.introDescr{
 		width: 60%;
 		border: 1px solid green;
+		background-color: #A8A8FF;
 
+
+		.introContainer{
+			height: 39vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+		h2{
+			width: 40%;
+			text-align: center;
+			font-family: @title-font;
+			font-size: 2.4rem;
+			letter-spacing: 4%;
+		}
+
+		p{
+			width: 60%;
+			font-family: @main-font;
+			font-size: 1rem;
+			text-align: center;
+		}
+	 }
 	}//End of Description
 }//End of Intro
 
 .skills{
-	height: 40vh;
+	height: 39vh;
 	margin-top: 6vh;
 	display: flex;
 	justify-content: space-between;
@@ -159,12 +183,24 @@ background-color: #D1BFFD;
 	.skillsDescr{
 		width: 60%;
 		border: 1px solid red;
+		background-color: #A8A8FF;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		h2{
+			width: 40%;
+		}
+
+		ul{
+			width: 60%;
+		}
 	}//End of Skills Description
 
 }//End of Skills
 
 .workhistory{
-	height: 40vh;
+	height: 39vh;
 	margin-top: 6vh;
 	display: flex;
 	justify-content: space-between;
@@ -177,7 +213,13 @@ background-color: #D1BFFD;
 	.worklist{
 		width: 60%;
 		border: 1px solid red;
+		background-color: #A8A8FF;
 	}//End of Work Description
 
 }// End of Work History
 
+.contact {
+	height: 40vh;
+	width: 100%;
+	display: flex;
+}
